@@ -1,5 +1,5 @@
 package edu.jsu.mcis;
-
+ 
 import java.util.Scanner;
 
 public class TicTacToeView {
@@ -21,9 +21,14 @@ public class TicTacToeView {
         /* Prompt the player to enter the row and the column of their next move.
            Return as a TicTacToeMove object. */
         
-        // INSERT YOUR CODE HERE
 
-        return null; // remove this line later!
+        System.out.println("Player" + (isXTurn? "X":"O") + "move: ");
+        int row = keyboard.nextInt();
+        int col = keyboard.nextInt();
+
+        TicTacToeMove m = new TicTacToeMove(row, col);
+
+        return m;
 
     }
 
